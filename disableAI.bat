@@ -5,9 +5,6 @@ if %errorLevel% == 0 (
     echo Success: Administrative permissions confirmed.
     taskkill /F /IM ai.exe
     cd %ProgramFiles%\Microsoft Office\root\vfs\ProgramFilesCommonX86\Microsoft Shared\OFFICE16\
-    del ai.dll.bak
-    del ai.exe.bak
-    del aimgr.exe.bak
     copy /y ai.dll ai.dll.bak
     copy /y ai.exe ai.exe.bak
     copy /y aimgr.exe aimgr.exe.bak
@@ -15,9 +12,6 @@ if %errorLevel% == 0 (
     del ai.exe
     del aimgr.exe
     cd %ProgramFiles%\Microsoft Office\root\vfs\ProgramFilesCommonX64\Microsoft Shared\OFFICE16\
-    del ai.dll.bak
-    del ai.exe.bak
-    del aimgr.exe.bak
     copy /y ai.dll ai.dll.bak
     copy /y ai.exe ai.exe.bak
     copy /y aimgr.exe aimgr.exe.bak
